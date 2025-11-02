@@ -1,44 +1,48 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
 title: Nadia Gonzalez Fernandez
-email: nadia.glez99@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-domain: "nala7.github.io"
-baseurl: "nala7.github.io" # the subpath of your site, e.g. /blog
-url: "https://nala7.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  nala7
+description: Nadia's homepage
+baseurl: ""
+url: https://nala7.github.io/
 
-# Build settings
-markdown: kramdown
-theme: minima
+theme: cvless
+
+# site settings
+taglong: Master's Student at Université de Montréal
+tagshort: MSc Student
+cv: true
+
+# author settings
+author:
+  name: Nadia Gonzalez Fernandez
+  email: nadia.gonzalez.fernandez@umontreal.ca
+photo: assets/files/photo.jpeg
+joblines:
+  - Université de Montréal
+  - Faculté des arts et des sciences
+  - Département d'informatique et de recherche opérationnelle
+  - 3150 Jean Brillant St, Montreal, Quebec H3T 1N8, Canada
+
+
+# profile links
+profile:
+
+  linkedin: https://www.linkedin.com/in/nadia-glez/
+  github: https://github.com/nala7
+
+# build settings
+permalink: pretty
+exclude:
+  - LICENSE
+  - README.md
+  - Gemfile
+  - vendor/
+
 plugins:
   - jekyll-feed
+  - jekyll-gist
+  - jekyll-paginate-v2
+  - jekyll-seo-tag
+  - jekyll-sitemap
 
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+sass:
+  sourcemap: never
+  
