@@ -3,8 +3,7 @@ description: Nadia's homepage
 baseurl: ""
 url: https://nala7.github.io/
 
-theme: cvless
-
+remote_theme: piazzai/cvless
 # site settings
 taglong: Master's Student at Université de Montréal
 tagshort: MSc Student
